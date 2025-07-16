@@ -7,6 +7,11 @@ class StringCalculator
       custom_delimiter = Regexp.escape(delimiter_line[2..])
       delimiter = /#{custom_delimiter}|,|\n/
     end
-    numbers.split(delimiter).map(&:to_i).sum
+    tokens = numbers.split(delimiter)
+    negatives = tokens.select { |n| n.to_i < 0 }
+    unless negatives.empty?
+      raise "negative numbers not allowed: #{negatives.join(', ')}"
+    end
+    tokens.map(&:to_i).sum
   end
 end
