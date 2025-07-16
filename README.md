@@ -3,14 +3,14 @@
 ---
 
 ## Features Implemented
-- Returns `0` for an empty string  
+- Returns 0 for an empty string  
 - Returns the number if only one number is passed  
 - Returns the sum of two or more comma-separated numbers  
-- Supports newline `\n` as an additional delimiter  
-- Supports custom delimiter in format `//[delimiter]\n[numbers]`  
+- Supports newline \n as an additional delimiter  
+- Supports custom delimiter in format //[delimiter]\n[numbers]  
 - Throws an exception for negative numbers  
-- Shows **all** negative numbers in the exception message  
-- ✅ Added one extra test: supports custom delimiter with newline mixed  
+- Shows all negative numbers in the exception message  
+- Added one extra test: supports custom delimiter with newline mixed  
 
 ---
 
